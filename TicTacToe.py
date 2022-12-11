@@ -38,14 +38,16 @@ for i in range(9):
         oValue = int(input("Enter the slot number (O's Chance) :- "))
         boardList[oValue] = 'O'
     print("\n")
-    if(i<5):
+    if(i>=5):
         xWinValue = win('X')
         oWinValue = win('Y')
         if(xWinValue==1):
+            printboard()
             text = "Congrations 'X' has won the match"
             print(text.center(100))
             break
         if(oWinValue==1):
+            printboard()
             text = "Congrations 'Y' has won the match"
             print(text.center(100))
             break
